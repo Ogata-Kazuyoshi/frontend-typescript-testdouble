@@ -6,12 +6,15 @@ export class RequestDataBuilder implements RequestData {
     remark = ""
     setName(name: string) {
         this.name = name
+        return this
     }
     setAge(age: number) {
         this.age = age
+        return this
     }
     setRemark(remark: string) {
         this.remark = remark
+        return this
     }
 
 }

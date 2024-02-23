@@ -19,9 +19,7 @@ export const Header = ({
   console.log(setName);
   console.log(userRepository);
 
-  const dummy = new RequestDataBuilder()
-  dummy.setName("tanaka")
-  dummy.setAge(30)
+  const dummy = new RequestDataBuilder().setName('tanaka').setAge(30)
 
   return <>
     <button onClick={()=>{userRepository.submit(dummy)}}>投稿</button>
